@@ -1,5 +1,5 @@
 {% set name = "cockroach" %}
-{% set version = "19.2.5" %}
+{% set version = "19.2.6" %}
 
 package:
   name: go-{{ name|lower }}
@@ -8,14 +8,14 @@ package:
 source:
   folder: gopath
   url: https://binaries.cockroachdb.com/{{ name }}-v{{ version }}.src.tgz
-  sha256: 7908fcf2dfe9fc525b3a5f60983372ab61dc859f28320bd23b2d9afb77cf31bb
+  sha256: b063547329760a117b58b1f76e8300f3a8759ed7cd12cdc0481f5e49a6405af0
   patches:
     - 0001-use-conda-forge-dependencies.patch
 
 build:
   number: 0
   #pin_depends: strict
-  skip: True  # [not linux]
+  skip: true  # [not linux]
 
 requirements:
   build:
@@ -46,7 +46,7 @@ about:
   home: http://cockroachlabs.com
   license: LicenseRef-BSL-1.1
   license_file: gopath/src/github.com/cockroachdb/cockroach/licenses/BSL.txt
-  summary: 'A disaster-surviving, cloud-native SQL database for building global, scalable cloud services.'
+  summary: A disaster-surviving, cloud-native SQL database for building global, scalable cloud services.
   description: |
     CockroachDB is a distributed SQL database built on a transactional and
     strongly-consistent key-value store. It scales horizontally; survives disk,
