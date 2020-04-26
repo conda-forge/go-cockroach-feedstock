@@ -15,7 +15,7 @@ source:
 build:
   number: 0
   #pin_depends: strict
-  skip: true  # [not linux]
+  skip: true  # [win]
 
 requirements:
   build:
