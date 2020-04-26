@@ -31,7 +31,6 @@ requirements:
     - libedit
     - rocksdb
   run:
-    - {{ pin_compatible('jemalloc', max_pin="x") }}
     - {{ pin_compatible('libedit', max_pin="x.x") }}
 
 test:
