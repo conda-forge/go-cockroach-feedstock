@@ -1,5 +1,5 @@
 {% set name = "cockroach" %}
-{% set version = "19.2.6" %}
+{% set version = "19.2.7" %}
 
 package:
   name: go-{{ name|lower }}
@@ -8,7 +8,7 @@ package:
 source:
   folder: gopath
   url: https://binaries.cockroachdb.com/{{ name }}-v{{ version }}.src.tgz
-  sha256: b063547329760a117b58b1f76e8300f3a8759ed7cd12cdc0481f5e49a6405af0
+  sha256: 8fe2c9c3d01cb2671fed70548934e6bd3baff90e5714730c93dbdc90ea4ec8e9
   patches:
     - 0001-use-conda-forge-dependencies.patch
 
