@@ -13,6 +13,6 @@ cxx_compiler_version:
 docker_image:
 - condaforge/linux-anvil-comp7
 libprotobuf:
-- 3.6.0
+- '3.12'
 rocksdb:
 - '6.2'
