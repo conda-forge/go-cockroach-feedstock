@@ -8,7 +8,7 @@ package:
 source:
   folder: gopath
   url: https://binaries.cockroachdb.com/{{ name }}-v{{ version }}.src.tgz
-  sha256: 8fe2c9c3d01cb2671fed70548934e6bd3baff90e5714730c93dbdc90ea4ec8e9
+  sha256: e8ed021d8e06a236fc72b907373fefc50ebd0147661b2816a2299749cf4d7a09
   patches:
     - 0001-use-conda-forge-dependencies.patch
 
