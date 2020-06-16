@@ -36,7 +36,7 @@ requirements:
 test:
   commands:
     - cockroach version
-    - cockroach start-single-node --insecure --background
+    - cockroach start-single-node --insecure --background --host localhost
     - cockroach workload init startrek
     - cockroach sql --insecure -d startrek -e 'select quote from quotes limit 1;'
     - cockroach quit --insecure
