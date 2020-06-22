@@ -15,4 +15,4 @@ docker_image:
 libprotobuf:
 - 3.6.0
 rocksdb:
-- '6.10'
+- '6.2'
