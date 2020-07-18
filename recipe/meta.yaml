@@ -28,6 +28,7 @@ requirements:
   host:
     - jemalloc
     - libprotobuf
+    - protobuf
     - libedit
     - rocksdb
   run:
