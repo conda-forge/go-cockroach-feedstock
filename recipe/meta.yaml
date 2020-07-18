@@ -15,6 +15,7 @@ source:
 build:
   number: 1
   #pin_depends: strict
+  merge_build_host: true
   skip: true  # [win]
 
 requirements:
