@@ -32,6 +32,8 @@ requirements:
     - rocksdb
   run:
     - {{ pin_compatible('libedit', max_pin="x.x") }}
+  run_constrained:
+    - __osx >={{ MACOSX_DEPLOYMENT_TARGET|default("10.9") }}  # [osx]
 
 test:
   commands:
