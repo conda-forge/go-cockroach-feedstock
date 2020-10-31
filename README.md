@@ -5,9 +5,13 @@ Home: http://cockroachlabs.com
 
 Package license: LicenseRef-BSL-1.1
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/go-cockroach-feedstock/blob/master/LICENSE.txt)
 
 Summary: A disaster-surviving, cloud-native SQL database for building global, scalable cloud services.
+
+Development: https://github.com/cockroachdb/cockroach
+
+Documentation: https://www.cockroachlabs.com/docs
 
 CockroachDB is a distributed SQL database built on a transactional and
 strongly-consistent key-value store. It scales horizontally; survives disk,

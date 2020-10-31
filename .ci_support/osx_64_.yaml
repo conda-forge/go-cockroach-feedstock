@@ -22,3 +22,6 @@ rocksdb:
 - '6.2'
 target_platform:
 - osx-64
+zip_keys:
+- - c_compiler_version
+  - cxx_compiler_version
