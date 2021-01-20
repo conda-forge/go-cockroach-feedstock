@@ -4,7 +4,9 @@ MACOSX_DEPLOYMENT_TARGET:  # [osx]
   - 10.10                  # [osx]
 macos_min_version:         # [osx]
   - 10.10                  # [osx]
-c_compiler_version:        # [osx]
+c_compiler_version:
+  - 7                      # [linux64]
   - 9                      # [osx]
-cxx_compiler_version:      # [osx]
+cxx_compiler_version:
+  - 7                      # [linux64]
   - 9                      # [osx]

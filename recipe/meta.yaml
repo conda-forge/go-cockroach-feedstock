@@ -23,7 +23,7 @@ requirements:
     - {{ compiler("c") }}
     - {{ compiler("cxx") }}
     - cmake >=3.8,<4
-    - libprotobuf 3.6
+    - libprotobuf
     - yarn
   host:
     - jemalloc
