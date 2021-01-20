@@ -23,11 +23,12 @@ requirements:
     - {{ compiler("c") }}
     - {{ compiler("cxx") }}
     - cmake >=3.8,<4
-    - libprotobuf
+    - libprotobuf 3.6
     - yarn
   host:
     - jemalloc
-    - libprotobuf
+    # The current release doesn't support a newer libprotobuf version.
+    - libprotobuf 3.6
     - libedit
     - rocksdb
   run:
