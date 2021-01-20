@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 set -euf
 
+# Disable warning-as-error
+echo '$@' > ./gopath/src/github.com/cockroachdb/cockroach/build/werror.sh
+
 # We unpack under the gopath directory
 pushd gopath
 
