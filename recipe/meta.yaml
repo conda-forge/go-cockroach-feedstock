@@ -19,11 +19,11 @@ build:
 
 requirements:
   build:
-    - {{ compiler("go-cgo") }} >=1.12.17,<1.13
+    - {{ compiler("go-cgo") }}
     - {{ compiler("c") }}
     - {{ compiler("cxx") }}
     - cmake >=3.8,<4
-    - protobuf ==3.6.0
+    - protobuf {{ libprotobuf }}
     - yarn
   host:
     - jemalloc
