@@ -3,15 +3,15 @@ MACOSX_DEPLOYMENT_TARGET:
 c_compiler:
 - clang
 c_compiler_version:
-- '9'
+- '15'
 channel_sources:
-- conda-forge,defaults
+- conda-forge
 channel_targets:
 - conda-forge main
 cxx_compiler:
 - clangxx
 cxx_compiler_version:
-- '9'
+- '15'
 libprotobuf:
 - 3.6.0
 macos_machine:
@@ -19,4 +19,9 @@ macos_machine:
 macos_min_version:
 - '10.10'
 rocksdb:
-- '6.2'
+- '7.9'
+target_platform:
+- osx-64
+zip_keys:
+- - c_compiler_version
+  - cxx_compiler_version
