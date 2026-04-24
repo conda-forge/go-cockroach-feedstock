@@ -13,7 +13,7 @@ source:
     - 0001-use-conda-forge-dependencies.patch
 
 build:
-  number: 0
+  number: 1
   #pin_depends: strict
   skip: true  # [win]
 
@@ -21,6 +21,7 @@ requirements:
   build:
     - {{ compiler("go-cgo") }} >=1.12.17,<1.13
     - {{ compiler("c") }}
+    - {{ stdlib("c") }}
     - {{ compiler("cxx") }}
     - cmake >=3.8,<4
     - protobuf ==3.6.0
