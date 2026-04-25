@@ -13,7 +13,7 @@ source:
     - 0001-use-conda-forge-dependencies.patch
 
 build:
-  number: 0
+  number: 1
   #pin_depends: strict
   skip: true  # [win]
 
